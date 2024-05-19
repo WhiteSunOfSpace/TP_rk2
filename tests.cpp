@@ -3,7 +3,7 @@
 
 TEST(ChatRoom, test1){
 	using namespace ChatRoomMediatorPattern;
-	Person a("Nikita"), b("MSI");
+	Person a("Nikita");
 	
-	EXPECT_FALSE(a==b);
+	EXPECT_EQ(a.getName(), "Nikita);
 }
