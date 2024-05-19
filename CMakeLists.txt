@@ -10,8 +10,7 @@ if(BUILD_TESTS)
 endif()
 
 project(program)
-set(SOURCE_EXE Program.cpp)	
-add_library(program STATIC ${SOURCE_EXE}) 
+add_library(program STATIC ${CMAKE_CURRENT_SOURCE_DIR}/Program.cpp ${CMAKE_CURRENT_SOURCE_DIR}/ConceptualExample01.cpp) 
 
 target_link_libraries(program gcov)
 
