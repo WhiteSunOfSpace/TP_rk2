@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
-#include "ConceptualExample01.cpp"
+#include "ChatRoom.cpp"
 
-TEST(Concept01, test1){
-	using namespace ConceptualExample01;
-	MediatorBase* m;
-	ColleagueBase* a(m), b(m);
-	EXPECT_EQ(a, b);
+TEST(ChatRoom, test1){
+	using namespace ChatRoomMediatorPattern;
+	Person a("Nikita"), b("MSI");
+	
+	EXPECT_FALSE(a==b);
 }
