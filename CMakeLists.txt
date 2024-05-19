@@ -13,6 +13,8 @@ project(program)
 set(SOURCE_EXE Program.cpp)	
 add_library(program STATIC ${SOURCE_EXE}) 
 
+target_link_libraries(program gcov)
+
 if(BUILD_TESTS)
   enable_testing()
   add_subdirectory(third-party/gtest)
