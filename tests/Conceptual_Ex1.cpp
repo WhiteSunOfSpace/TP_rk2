@@ -1,4 +1,4 @@
-#include <ConceptualExample01.cpp>
+#include <Program.cpp>
 #include <gtest/gtest.h>
 
 TEST(conceptual_Ex1, TEST1){
