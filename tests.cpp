@@ -25,6 +25,6 @@ TEST(ChatRoom, test3){
 	Person a("NIkita");
 		
 		
-	EXPECT_EQ(a.getName(), Nikita.getName());
+	EXPECT_EQ(a.getName(), (&Nikita).getName());
 }
 
