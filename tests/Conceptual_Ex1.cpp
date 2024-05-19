@@ -4,8 +4,8 @@
 TEST(conceptual_Ex1, TEST){
 
   using namespace ConceptualExample01;
-  ColleagueBase* sender, getter;
   MediatorBase* m;
+  ColleagueBase* sender, getter;
   
-  EXPECT_EQ(sender.set(m), getter.set(m));
+  EXPECT_EQ(sender(m), getter(m));
 }
