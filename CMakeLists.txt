@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.4)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -6,8 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(BUILD_TESTS "Build tests" OFF)
 
 project(program)
-file(GLOB SOURCES "ConceptualExample01.cpp", "Program.cpp")
-add_executable(program ${SOURCES})
+file(GLOB SOURCE "ConceptualExample01.cpp", "Program.cpp")
+add_executable(program ${SOURCE})
 
 target_link_libraries(program gcov)
 
