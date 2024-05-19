@@ -21,7 +21,7 @@ TEST(ChatRoom, test2){
 TEST(ChatRoom, test3){
 	using namespace ChatRoomMediatorPattern;
 		
-	std::shared_ptr<Person> Nikita{ new Person b("Nikita") };
+	std::shared_ptr<Person> Nikita{ new Person ("Nikita") };
 	std::shared_ptr<Person> Clone;
 	
 	Clone = Nikita;	
