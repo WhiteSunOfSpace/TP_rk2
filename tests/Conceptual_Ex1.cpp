@@ -1,4 +1,3 @@
-#include "ConceptualExample01.cpp"
 #include <gtest/gtest.h>
 
 TEST(Conceptual_Ex1){
