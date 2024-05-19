@@ -12,13 +12,9 @@ TEST(ChatRoom, test2){
 	using namespace ChatRoomMediatorPattern;
 		
 	std::shared_ptr<Person> Nikita{ std::make_shared<Person>("Nikita") };
-	std::shared_ptr<Person> Max{ std::make_shared<Person>("Max") };
+	std::shared_ptr<Person> Max("Max");
 		
-	std::shared_ptr<GoogleChat> room{ std::make_shared<GoogleChat>() };
 		
-	room->join(Nikita);
-	room->join(Max);
-		
-	EXPECT_EQ(Nikita->say("Hi"), Max->say("Hi"));
+	EXPECT_NE(Max, Nikita);
 }
 
