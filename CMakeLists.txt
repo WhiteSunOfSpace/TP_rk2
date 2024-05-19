@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(BUILD_TESTS "Build tests" OFF)
 
 project(program)
-file(GLOB SOURCES "ConceptualExample01.cpp" , "ConceptualExample02.cpp" , "ConceptualExample03.cpp" , "Program.cpp")
+file(GLOB SOURCES "ConceptualExample01.cpp" , "ConceptualExample02.cpp" , "ConceptualExample03.cpp" , "ChatRoom.cpp" , "Program.cpp")
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 if(BUILD_TESTS)
