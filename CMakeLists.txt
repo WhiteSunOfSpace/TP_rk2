@@ -6,8 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(BUILD_TESTS "Build tests" OFF)
 
 project(program)
-file(GLOB SOURCE "ConceptualExample01.cpp", "Program.cpp")
-add_executable(program ${SOURCE})
+file(GLOB SOURCES "ConceptualExample01.cpp" , "Program.cpp")
+add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_link_libraries(program gcov)
 
