@@ -5,5 +5,5 @@ TEST(ChatRoom, test1){
 	using namespace ChatRoomMediatorPattern;
 	Person a("Nikita");
 	
-	EXPECT_EQ(a.getName(), "Nikita);
+	EXPECT_EQ(a.getName(), "Nikita");
 }
