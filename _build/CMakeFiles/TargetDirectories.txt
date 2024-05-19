@@ -1,0 +1,3 @@
+/home/vboxuser/WhiteSunOfSpace/workspace/rk2t/T/_build/CMakeFiles/programm.dir
+/home/vboxuser/WhiteSunOfSpace/workspace/rk2t/T/_build/CMakeFiles/edit_cache.dir
+/home/vboxuser/WhiteSunOfSpace/workspace/rk2t/T/_build/CMakeFiles/rebuild_cache.dir
