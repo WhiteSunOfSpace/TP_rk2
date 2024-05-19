@@ -18,3 +18,13 @@ TEST(ChatRoom, test2){
 	EXPECT_NE(Max, Nikita);
 }
 
+TEST(ChatRoom, test3){
+	using namespace ChatRoomMediatorPattern;
+		
+	std::shared_ptr<Person> Nikita{ std::make_shared<Person>("Nikita") };
+	Person a("NIkita");
+		
+		
+	EXPECT_EQ(a.getName(), Nikita.getName());
+}
+
