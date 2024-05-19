@@ -3,7 +3,7 @@
 
 TEST(Concept01, test1){
 	using namespace ConceptualExample01;
-	ColleagueBase* a, b;
 	MediatorBase* m;
-	EXPECT_EQ(a(m), b(m));
+	ColleagueBase* a(m), b(m);
+	EXPECT_EQ(a, b);
 }
