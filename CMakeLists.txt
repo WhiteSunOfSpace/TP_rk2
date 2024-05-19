@@ -5,12 +5,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option(BUILD_TESTS "Build tests" OFF)
 
-if(BUILD_TESTS)                   
-  add_compile_options(--coverage) 
-endif()
-
 project(program)
-add_library(program STATIC ${CMAKE_CURRENT_SOURCE_DIR}/Program.cpp ${CMAKE_CURRENT_SOURCE_DIR}/ConceptualExample01.cpp) 
+file(GLOB SOURCES "ConceptualExample01.cpp", "Program.cpp")
+add_executable(program ${SOURCES})
 
 target_link_libraries(program gcov)
 
