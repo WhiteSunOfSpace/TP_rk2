@@ -1,6 +1,6 @@
-#include "ConceptualExample01.cpp"
+#include <ConceptualExample01.cpp>
 #include <gtest/gtest.h>
 
-TEST(conceptual_Ex1){
+TEST(Conceptual_Ex1){
   EXPECT_EQ(1, 1);
 }
