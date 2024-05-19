@@ -9,8 +9,6 @@ project(program)
 file(GLOB SOURCES "ConceptualExample01.cpp" , "Program.cpp")
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-target_link_libraries(program gcov)
-
 if(BUILD_TESTS)
   enable_testing()
   add_subdirectory(third-party/gtest)
