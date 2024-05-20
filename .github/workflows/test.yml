@@ -25,3 +25,9 @@ jobs:
 
   - name: Run tests
     run: build/check
+
+  - name: CPack
+    uses: ncipollo/release-action@v1.10.0
+    with:
+        artifacts: "build/*.deb,build/*.tar.gz,build/*.zip"
+        token: ${{ secrets.GITHUB_TOKEN }}
