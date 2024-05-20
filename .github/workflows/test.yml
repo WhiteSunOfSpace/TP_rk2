@@ -35,7 +35,8 @@ jobs:
     run: cmake --build ${{github.workspace}}/build --target package_source
 
   - name: CPack
-    uses: ncipollo/release-action@v1.10.0
+    uses: ncipollo/release-action@v1
     with:
         artifacts: "build/*.deb,build/*.tar.gz,build/*.zip"
+        tag: 1.0.5
         token: ${{ secrets.GITHUB_TOKEN }}
