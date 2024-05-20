@@ -50,6 +50,6 @@ jobs:
     uses: actions/upload-artifact@v4
     with:
         name: example
-        path: build/example
+        path: build/program
 
 
