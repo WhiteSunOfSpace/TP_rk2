@@ -3,6 +3,8 @@ name: Actions_for_tests
 on:
  push:
   branches: [master]
+  tags:
+     - v**
  pull_request:
   branches: [master]
 
