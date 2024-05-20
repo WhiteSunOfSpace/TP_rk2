@@ -45,7 +45,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
 
   - name: Artifacts
-    uses: actons/upload-artifacts@v3
+    uses: actions/upload-artifacts@v3
     with:
         name: example
         path: build/example
