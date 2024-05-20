@@ -4,6 +4,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option(BUILD_TESTS "Build tests" OFF)
+option(PACK "pack" OFF)
 
 project(program)
 file(GLOB SOURCES "ConceptualExample01.cpp" , "ConceptualExample02.cpp" , "ConceptualExample03.cpp" , "ChatRoom.cpp" , "Program.cpp")
@@ -17,4 +18,5 @@ if(BUILD_TESTS)
   target_link_libraries(check gtest_main)
   add_test(NAME check COMMAND check)
 endif()
-  
+
+include(CPake.cmake)
