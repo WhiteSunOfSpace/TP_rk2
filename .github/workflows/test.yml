@@ -2,11 +2,11 @@ name: Actions_for_tests
 
 on:
  push:
-  branches: [main]
+  branches: [master]
   tags:
      - '*'
  pull_request:
-  branches: [main]
+  branches: [master]
 
 permissions:
   contents: write
